@@ -18,11 +18,31 @@
 4. Ссылка:
    `https://skdfhnx.github.io/ph-loading/loading.html`
 
+## FastDL (танцы / wiltOS anim)
+Папка `fastdl/` — корень для `sv_downloadurl`. Внутри пути как в GAME:
+
+- `models/m_anm.mdl` (+ `.ani`, `f_anm`, `z_anm`)
+- `models/player/wiltos/anim_*.mdl` (base + `anim_extension_mod13.mdl`)
+- `sound/wos/tf2/taunts/*`, `materials/wos/tf2/taunts/*`
+
+На сервере:
+
+```
+sv_downloadurl "https://skdfhnx.github.io/ph-loading/fastdl"
+```
+
+Те же файлы лежат в аддоне `phe_hunter_dances` (AddFile). Без FastDL клиенты часто не получают крупные `.ani` и видят только ходьбу (`fail=no_driver`).
+
+Обновить FastDL с сервера (PowerShell): скопировать `models/`, `sound/`, `materials/` из `garrysmod/addons/phe_hunter_dances/` в `ph-loading/fastdl/`, затем `git push`.
+
+**Не** используй Git LFS — GitHub Pages не отдаёт LFS-файлы.
+
 ## Как подключить на PH-сервере
 В `garrysmod/cfg/server.cfg`:
 
 ```
 sv_loadingurl "https://skdfhnx.github.io/ph-loading/loading.html"
+sv_downloadurl "https://skdfhnx.github.io/ph-loading/fastdl"
 ```
 
 Потом `changelevel` или рестарт PropHunt.
