@@ -3,7 +3,8 @@
 $ErrorActionPreference = "Stop"
 $sources = @(
 	"C:\Users\347ro\Desktop\server\garrysmod\addons\phe_hunter_dances",
-	"C:\Users\347ro\Desktop\server\garrysmod\addons\phe_shesterochka"
+	"C:\Users\347ro\Desktop\server\garrysmod\addons\phe_shesterochka",
+	"C:\Users\347ro\Desktop\server\garrysmod\addons\phe_pets"
 )
 $fastdl = Join-Path $PSScriptRoot "fastdl"
 

@@ -1,0 +1,11 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/defcongaming/pets/tex_tortoise"
+
+	"$phongalbedotint"	"1"
+
+	"$phong" "1"
+	"$phongexponent" "1"
+	"$phongboost" "1"
+	"$phongfresnelranges" "[1.5 1.4 1.3]"
+}
