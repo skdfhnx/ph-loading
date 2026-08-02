@@ -243,6 +243,30 @@
     border-radius: 999px;
     white-space: nowrap;
   }
+  .sticky-tip {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background: linear-gradient(90deg, rgba(255, 209, 102, 0.12), rgba(255, 209, 102, 0.04));
+    border: 1px solid rgba(255, 209, 102, 0.4);
+    border-radius: 12px;
+    padding: 12px 14px;
+  }
+  .sticky-tip .mark {
+    flex-shrink: 0;
+    color: var(--warn);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding-top: 2px;
+  }
+  .sticky-tip p {
+    color: var(--text);
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 600;
+  }
   .footer {
     display: flex; justify-content: space-between; gap: 12px;
     color: var(--muted);
@@ -294,6 +318,11 @@
         <div class="fileline" id="fileLine">Ждём данные от клиента Garry's Mod…</div>
         <div class="timer" id="timer">Время загрузки: 0:00</div>
       </div>
+    </div>
+
+    <div class="sticky-tip" role="note">
+      <div class="mark">Важно</div>
+      <p>Если загрузка очень долгая — выключи программу Zapret (обход блокировок) на время входа, затем можно включить снова.</p>
     </div>
 
     <div class="grid">
